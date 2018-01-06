@@ -19,7 +19,7 @@ services:
 
   telegraf:
     container_name: telegraf
-    image: devopsevd/telegraf_devops:latest
+    image: telegraf
     network_mode: "host"
     volumes:
         - "./telegraf.conf:/etc/telegraf/telegraf.conf"
