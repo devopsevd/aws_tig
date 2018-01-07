@@ -17,6 +17,9 @@ services:
       - "3000:3000"
     links:
       - influxdb
+    environment:
+      - GF_SMTP_ENABLED=true
+      - GF_SMTP_HOST=10.144.2.19:1025
     restart: always
 
   telegraf:
